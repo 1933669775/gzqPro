@@ -1,0 +1,597 @@
+body{
+	overflow-x: hidden;
+}
+// 头部开始
+.con_a{
+	.banner{
+		background: url(../../img/business/20191120093922_1265.jpg) no-repeat center/122%;
+		text-align: center;
+		padding: 10% 0;
+		p{
+			&:nth-child(1){
+				font-size: 30px;
+				margin-bottom: 20px;
+				color: rgba(225,225,225,0.4);
+				font-weight: 900;
+			}
+			&:nth-child(2){
+				letter-spacing: 4px;
+				font-weight: 900;
+				color: #fff;
+				font-size: 24px;
+			}
+		}
+	}
+}
+
+// 头部文字样式
+.header-font{
+	padding: 70px 50px;
+	text-align: center;
+	h2{
+		margin-bottom: 13px;
+		font-size: 30px;
+		color: #444;
+	}
+	p{
+		font-size: 14px;
+		font-weight: 100px;
+		margin-bottom: 22px;
+		color: #555;
+		letter-spacing: 1px;
+	}
+	.line{
+		width: 178px;
+		height: 1px;
+		margin: 0 auto;
+		background-color: #DDDDDD;
+		position: relative;
+		&::after{
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			width: 60px;
+			height: 2px;
+			left: 59px;
+			background: #0752ab;
+		}
+	}
+}
+// 头部结束
+.con_b{
+	width: 100%;
+	.wrap{
+		width: 90%;
+		margin: 0 auto;
+		// 字
+		.font{
+			margin: 0 auto;
+			text-align: center;
+			line-height: 28px;
+			color: #666;
+			max-width: 1120px;
+			font-size: 14px;
+			margin-bottom: 60px;
+		}
+	}
+}
+// 头部文字样式结束
+
+//内容2、会动的数字
+.con_c{
+	width: 100%;
+	.wrap{
+		padding: 50px 0;
+		width: 90%;
+		margin: 0 auto;
+		display: flex;
+		background-image: linear-gradient(90deg, #09308f 0%, #0097e2 100%), linear-gradient(#0a509e, #0a509e);
+		.box{
+			flex: 1;
+			text-align: center;	
+			border-right:1px solid rgba(245,245,245,0.15);
+			&:last-of-type{
+				border: none;
+			}
+			p{
+				color: #fff;
+				&:nth-child(1){
+					font-size: 54px;
+					font-weight: 900;
+					span{
+						color: #fff;
+					}
+				}
+				&:nth-child(2){
+					font-size: 14px;
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+}
+//内容2、会动的数字结束
+
+// 内容3发展历途、轮播
+.swiper-container22{
+	display: none !important;
+}
+.con_d{
+	width: 100%;
+	overflow: hidden;
+	.wrap{
+		width:calc(90% - 12.5%);
+		padding: 60px 6.25%;
+		margin: 0 auto;
+		position: relative;
+		height: 100%;
+		background: url(../../img/walk/about_02.jpg) no-repeat center/cover;
+		max-width: 1400px;
+		
+		.swiper-container{
+			// 中间的线
+			&::after{
+				content: "";
+				width: 100%;
+				height: 1px;
+				background: #d5d5d5;
+				position: absolute;
+				top: 50%;
+				transform: -50%;
+				z-index: 10;
+			}
+			height: 443px;
+			padding: 5px 0;
+			position: relative;
+			.swiper-slide{
+				&:nth-child(even){
+					.text{
+						top: 105px;
+						&::after{
+							top: -15px;
+							bottom: auto;
+							border-top: none;
+							border-bottom: 15px solid #fff;
+						}
+					}
+					.num{
+						margin-top: 135px;
+					}
+				}
+				&::after{
+					content: "";
+					display: block;
+					position: absolute;
+					width: 10px;
+					height: 10px;
+					background-color: #fff;
+					border-radius: 50%;
+					border:4px #0752AB solid ;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%,-50%);
+				}
+				height: 100%;
+				position: relative;
+				.text{
+					&::after{
+						content: "";
+						display: block;
+						position: absolute;
+						border: 15px solid #fff;
+						bottom: -15px;
+						left: 50%;
+						transform: translateX(-50%);
+						border-left-color: transparent;
+						border-bottom: none;
+						border-right-color: transparent;
+					}
+					background: #fff;
+					padding: 35px 11% 0 11%;
+					position: relative;
+					height: 130px;
+					div{
+						font-size: 14px;
+						line-height: 21px;
+						color: #666;
+						position: relative;
+						&::after{
+							content: "";
+							display: block;
+							width: 4px;
+							height: 4px;
+							border-radius: 50%;
+							background: #0752ab;
+							left: -10px;
+							top: 10px;
+							position: absolute;
+						}
+					}
+				}
+				.num{
+					position: relative;
+					text-align: center;
+					line-height: 32px;
+					color:#333 ;
+					font-weight: 900;
+					font-size: 30px;
+					margin-top: 88px;
+				}
+			}
+			.swiper-button-next{
+				&::after{
+					content: ">";
+				}
+				right: 0 !important;
+			}
+			.swiper-button-prev{
+				&::after{
+					content: "<";
+				}
+				left: 0 !important;
+			}
+			.swiper-button-next,.swiper-button-prev{
+				&::after{
+					font-size: 25px;
+					color: #828282;
+					transition: .5s;
+				}
+				&:hover{
+					&::after{
+						color: #fff;
+						transition: .5s;
+					}
+					background-color: #0752ab;
+					transition: .5s;
+				}
+				transition: .5s;
+				width: 50px;
+				height: 50px;
+				background: #fff;
+				border-radius: 50%;
+			}
+		}
+	}
+}
+// 内容3发展历程、轮播结束
+
+// 内容4、、企业文化
+.con_e{
+	width: 100%;
+	margin-bottom: 70px;
+	.wrap{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.box{
+		display: flex;
+		.centent{
+			overflow: hidden;
+			&:hover .img img{
+				transform: scale(1.1);
+			}
+			&:hover .bottom div p:nth-child(1){
+				color: #0752ab;
+			}
+			&:last-of-type .bottom{
+				border-right: 1px solid #e0e0e0;
+			}
+			flex: 1;
+			.img{
+				overflow: hidden;
+				width: 100%;
+				img{
+					display: block;
+					width: 100%;
+					transition: .5s;
+				}
+			}
+			.bottom{
+				overflow: hidden;
+				background: #f5f5f5;
+				border: 1px solid #e0e0e0;
+				border-top: 0;
+				border-right: 0;
+				div{
+					width: calc(100% - 24%);
+					padding: 12%;
+					text-align: center;
+					p{
+						&:nth-child(1){
+							font-size: 18px;
+							margin: 10px 0 5px 0;
+							transition: .5s;
+							color: #333;
+						}
+						&:nth-child(2){
+							font-size: 14px;
+							margin-bottom: 23px;
+							color: #666;
+							display: -webkit-box;
+							-webkit-box-orient: vertical;
+							-webkit-line-clamp: 1;
+							overflow: hidden;
+						}
+						&:last-of-type{
+							width: 20px;
+							height: 2px;
+							margin: 0 auto;
+							background-color: #0752ab;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+// 内容4、、企业文化结束
+
+// 内容5、、企业荣誉开始
+.con_f{
+	background-color: #f5f5f5;
+	width: 100%;
+	padding-bottom: 50px;
+	.wrap{
+		width: 90%;
+		margin: 0 auto;
+		.center{
+			display: flex;
+			justify-content: center;
+			margin-bottom: 60px;
+			.btn{
+				cursor: pointer;
+				height: 44px;
+				line-height: 44px;
+				font-size: 16px;
+				width: 180px;
+				text-align: center;
+				background-color: #e5e5e5;
+				border: solid 1px #dcdcdc;
+				color: #444;
+				transition: .5s;
+				&:hover{
+					background: #0752ab;
+					border-color: #0752ab;
+					color: #fff;
+					transition: .5s;
+				}
+			}
+			.active{
+				background: #0752ab;
+				border-color: #0752ab;
+				color: #fff;
+				transition: .5s;
+			}
+			#btn1{
+				margin-right: 25px;
+			}
+		}
+		.box{
+			position: relative;
+			.show{
+				height: 0;
+				overflow: hidden;
+			}
+			.swiper-container2{
+				.swiper-pagination{
+					
+				}
+				.swiper-wrapper{
+					.swiper-slide{
+						overflow: hidden;
+						&:hover .top-img img{
+							transform: scale(1.1);
+							transition: .5s;
+						}
+						&:hover .bottom-font::after{
+							height: 58px;
+						}
+						&:hover .bottom-font font{
+							color: #fff;
+						}
+						.top-img{
+							img{
+								width: 100%;
+								transition: .5s;
+							}
+						}
+						.bottom-font{
+							width: 100%;
+							background: ;
+							height: 58px;
+							line-height: 58px;
+							text-align: center;
+							background-color: #ebebeb;
+							position: relative;
+							font{
+								position: relative;
+								z-index: 5;
+								font-size: 16px;
+								color: #666;
+								transition: .5s;
+							}
+							&::after{
+								content: "";
+								position: absolute;
+								top: 0;
+								left: 0;
+								height: 2px;
+								width: 100%;
+								background: #0752ab;
+								transition: .5s;
+							}
+						}
+					}
+				}
+			}
+			.swiper-button-next{
+				&::after{
+					content: ">";
+				}
+				right: -25px;
+			}
+			.swiper-button-prev{
+				&::after{
+					content: "<";
+				}
+				left: -25px;
+			}
+			.swiper-button-next,.swiper-button-prev{
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				background-color: #E5E5E5;
+				transition: .5s;
+				&::after{
+					font-weight: 100;
+					color: #333;
+					font-size: 30px;
+				}
+				&:hover{
+					background-color: #0752ab;
+				}
+				&:hover:after{
+					color: #eee;
+				}
+			}
+		}
+	}
+}
+// 内容5、、企业荣誉结束
+.swiper-container11{
+	display: none;
+}
+.swiper-container3{
+	display: none;
+}
+
+
+
+
+// 996~768
+@media screen and (max-width:996px) and (min-width:769px){
+	// 发展历程
+	.con_d .wrap .swiper-container .swiper-slide .text div{
+		font-size: 12px;
+		line-height: 18px;
+	}
+	.con_d .wrap .swiper-container .swiper-slide .text{
+		padding-top: 8%;
+	}
+	.con_d .wrap .swiper-container .swiper-slide .num{
+		margin-top: 112px;
+	}
+}
+
+
+
+// 768以下
+@media screen and (max-width:767px){
+.con_a{
+	.banner{
+		background: url(../../img/walk/20191119192205_3007.jpg) no-repeat center/230% !important; 
+		padding: 16% 0;
+	}
+}
+.con_c .wrap .box p:nth-child(1){
+	font-size: 20px;
+}
+
+// 发展历程
+.swiper-container11{
+	display: block;
+}
+.con_d .wrap{
+	padding: 22px 6.5%;
+}
+.con_d .wrap .swiper-container1{
+	display: none;
+}
+.con_d .wrap .swiper-container .swiper-slide:nth-child(even) .num{
+	margin: 0;
+	position: relative;
+	top: -20px;
+}
+.con_d .wrap .swiper-container .swiper-slide:nth-child(even) .text{
+	top: 276px;
+}
+.con_d .wrap .swiper-container .swiper-slide:nth-child(odd) .num{
+	margin: 0;
+	top: 260px;
+}
+.con_d .wrap .swiper-container .swiper-slide:nth-child(odd) .text{
+	top: -30px;
+}
+.con_d .wrap .swiper-container{
+	.swiper-button-next,.swiper-button-prev{
+		display: none !important;
+	}
+}
+.swiper-container22{
+	padding-bottom: 50px;
+	display: block !important;
+	.swiper-wrapper{
+		.swiper-slide{
+			width: 60%;
+		}
+	}
+}
+.con_e .box .centent .bottom div{
+	padding: 25% 12%;
+}
+
+// 内容4、、企业文化
+
+
+
+
+// 内容5、、企业荣誉
+.swiper-container2{
+	display: none !important;
+}
+.swiper-button-next,.swiper-button-prev{
+	display: none !important;
+}
+.swiper-container3{
+	display: block;
+	overflow: hidden;
+	padding-bottom: 50px; 
+	.swiper-wrapper{
+		.swiper-slide{
+			.img-top{
+				img{
+					width: 100%;
+				}
+			}
+			.boxtext{
+				width: 100%;
+				background: ;
+				height: 58px;
+				line-height: 58px;
+				text-align: center;
+				background-color: #ebebeb;
+				position: relative;
+				font{
+					position: relative;
+					z-index: 5;
+					font-size: 16px;
+					color: #666;
+					transition: .5s;
+				}
+				&::after{
+					content: "";
+					position: absolute;
+					top: 0;
+					left: 0;
+					height: 2px;
+					width: 100%;
+					background: #0752ab;
+					transition: .5s;
+				}
+			}
+		}
+	}
+}
+
+}

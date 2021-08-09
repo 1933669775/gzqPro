@@ -1,0 +1,122 @@
+.son{
+	width: 100%;
+	background: #f5f5f5;
+	padding: 4.3333% 0 6.25%;
+	.wrap{
+		.paging{
+			width: 90%;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+			padding-bottom: 50px;
+			margin-top: 50px;
+			a{
+				line-height: 40px;
+				&:nth-child(2){
+					width: 160px;
+					height: 40px;
+					border-radius: 23px;
+					background-color: #F5F5F5;
+					text-align: center;
+					font-size: 16px;
+					color: #333;
+					transition: .5s;
+					position: relative;
+					z-index: 1000;
+					&:hover{
+						background-color: #0752ab;
+						color: #fff;
+					}
+				}
+				&:nth-child(1),&:last-of-type{
+					position: relative;
+					padding-left: 55px;
+					&::after{
+						content: "<";
+						display: block;
+						width: 40px;
+						height: 40px;
+						background-color: #ebebeb;
+						position: absolute;
+						border-radius: 50%;
+						line-height: 40px;
+						text-align: center;
+						left: 0;
+						top: 0;
+						color: #666666;
+						transition: .5s;
+					}
+				}
+				&:hover::after{
+					background-color: #0752ab;
+					color: #fff;
+				}
+				&:last-of-type{
+					padding: 0 55px 0 0;
+					&::after{
+						content: ">";
+						right: 0;
+						left: auto;
+					}
+				}
+			}
+		}
+		width: 90%;
+		margin: 0 auto;
+		background-color: #fff;
+		.width90{
+			width: 90%;
+			margin: 0 auto;
+			header{
+				text-align: center;
+				padding: 100px 0 45px;
+				h1{
+					font-size: 28px;
+					font-weight: bold;
+					margin-bottom: 30px;
+					line-height: 1.2;
+				}
+				div{
+					display: flex;
+					justify-content: center;
+					p{
+						margin-left: 30px;
+						font-size: 14px;
+						color: #999;
+					}
+				}
+			}
+			.centent{
+				padding: 40px 0;
+				border-top: 1px solid #e5e5e5;
+				border-bottom: 1px solid #e5e5e5;
+				line-height: 24px;
+				color: #666666;
+				line-height: 30px;
+				img{
+					width: 60%;
+					display: block;
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.centent{
+		img{
+			width: 100% !important;
+		}
+	}
+	.paging{
+		position: relative !important;
+		margin-bottom: 70px !important;
+	}
+	.paging a:nth-child(2){
+		position: absolute !important;
+		left: 50% !important;
+		transform: translateX(-50%) !important;
+		top: 60px !important;
+	}
+}

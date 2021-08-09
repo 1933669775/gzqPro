@@ -1,0 +1,393 @@
+body{
+	overflow-x: hidden;
+}
+// 头部开始
+.con_a{
+	.banner{
+		background: url(../../img/business/20191120093922_1265.jpg) no-repeat center/122%;
+		text-align: center;
+		padding: 10% 0;
+		p{
+			&:nth-child(1){
+				font-size: 30px;
+				margin-bottom: 20px;
+				color: rgba(225,225,225,0.4);
+				font-weight: 900;
+			}
+			&:nth-child(2){
+				letter-spacing: 4px;
+				font-weight: 900;
+				color: #fff;
+				font-size: 24px;
+			}
+		}
+	}
+}
+
+// 头部文字样式
+.header-font{
+	padding: 70px 50px;
+	text-align: center;
+	h2{
+		margin-bottom: 13px;
+		font-size: 30px;
+		color: #444;
+	}
+	p{
+		font-size: 14px;
+		font-weight: 100px;
+		margin-bottom: 22px;
+		color: #555555;
+		letter-spacing: 1px;
+	}
+	.line{
+		width: 178px;
+		height: 1px;
+		margin: 0 auto;
+		background-color: #ddd;
+		position: relative;
+		&::after{
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			width: 60px;
+			height: 2px;
+			left: 59px;
+			background: #0752ab;
+		}
+	}
+}
+// 头部文字样式结束
+
+//水环境治理、大气治理、固废 土壤修复
+.top-btn{
+	background-color: #f5f5f5;
+	border-bottom: 1px solid #e7e7e7;
+	width: 100%;
+	ul{
+		width: 90%;
+		display: flex;
+		margin: 0 auto;
+		max-width: 1400px;
+		.active{
+			background: #0752ab;
+		}
+		.active a{
+			color: #fff !important;
+		}
+		li{
+			flex: 1;
+			height: 60px;
+			border-right: 1px solid #e7e7e7;
+			text-align: center;
+			font-size: 16px;
+			line-height: 60px;
+			a{
+				position: relative;
+				z-index: 10;
+				color: #444444;
+				display: block;
+				transition: .5s;
+				&::after{
+					content: "";
+					display: block;
+					width: 100%;
+					height: 0;
+					overflow: hidden;
+					transition: .5s;
+					background: #0752ab;
+					position: absolute;
+					top: 0;
+					left: 0;
+					z-index: -1;
+				}
+				&:hover:after{
+					height: 60px;
+				}
+				&:hover{
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+//水环境治理、大气治理、固废 土壤修复结束
+
+//内容1、、
+.con_b{
+	background-color: #f5f5f5;
+	width: 100%;
+	padding-bottom: 70px;
+	.wrap{
+		background-color: #fff;
+		width: 90%;
+		margin:0 auto;
+	}
+	.centent{
+		width: 90%;
+		margin:0 auto;
+		padding-top: 50px;
+		h3{
+			font-size: 20px;
+			color: #444;
+			padding-left: 34px;
+			margin-bottom: 44px;
+			position: relative;
+			&::after{
+				content: "";
+				display: block;
+				position: absolute;
+				width: 20px;
+				height: 2px;
+				background-color: #015aa1;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}
+		.top{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			padding-bottom: 20px;
+			margin-bottom: 40px;
+			border-bottom: 1px solid #ccc;
+			.box{
+				width: 48.55%;
+				margin-bottom: 2.55%;
+				overflow: hidden;
+				&:hover a .box-text{
+					top: 0;
+				}
+				&:hover a .box-text .op{
+					opacity: 1;
+				}
+				&:hover a::after{
+					opacity: 1;
+				}
+				a{
+					position: relative;
+					display: block;
+					.img-box{
+						img{
+							width: 100%;
+							display: block;
+							border-radius: 10px;
+						}
+					}
+					.box-text{
+						position: absolute;
+						z-index: 100;
+						top: 55%;
+						padding: 15% 13.5% 0 13.5%;
+						transition: .5s;
+						h4{
+							margin-bottom: 8%;
+							color: #fff;
+							font-size: 18px;
+							padding-left: 15px;
+							position: relative;
+							&::after{
+								content: "";
+								display: block;
+								height: 18px;
+								width: 3px;
+								background-color: #fff;
+								position: absolute;
+								left: 0;
+								top: 54%;
+								transform: translateY(-50%);
+							}
+						}
+						.op{
+							opacity: 0;
+							transition: .5s;
+							p{
+								color: #cbd9ee;
+								line-height: 24px;
+								font-size: 14px;
+								display: -webkit-box;
+								-webkit-box-orient: vertical;
+								-webkit-line-clamp: 2;
+								overflow: hidden;
+							}
+							.btn{
+								width: 38px;
+								height: 38px;
+								border-radius: 50%;
+								line-height: 38px;
+								text-align: center;
+								background-color: #f9f9f9;
+								color:#015aa1 ;
+								margin-top: 50px;
+							}
+						}
+					}
+					&::after{
+						content: "";
+						display: block;
+						width: 100%;
+						height: 100%;
+						position: absolute;
+						top: 0;
+						background-color: #015aa1;
+						border-radius: 10px;
+						opacity: 0;
+						transition: .5s;
+					}
+				}
+			}
+		}
+		.bottom{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			padding-bottom: 80px;
+			.box{
+				width: 48.75%;
+				box-shadow: 0px 8px 0px #dae1ec;
+				border: solid 1px #dae1ec;
+				background-color: #f5f6f7;
+				border-radius: 10px;
+				margin: 2.5% 0 0 0;
+				transition: .5s;
+				&:hover{
+					background-color: #015aa1;
+				}
+				&:hover .img-left img:nth-child(2){
+					z-index: 10;
+					opacity: 1;
+				}
+				&:hover .text-right h5{
+					color: #fff;
+				}
+				&:hover .text-right p{
+					color: #d9d9d9;
+				}
+				a{
+					display: flex;
+					padding: 0 3% 0 5.5%;
+					height: 100px;
+					align-items: center;
+					.img-left{
+						position: relative;
+						width: 60px;
+						height: 60px;
+						margin-right: 26px;
+						img{
+							position: absolute;
+							left: 0;
+							top: 0;
+							transition: .5s;
+							&:nth-child(2){
+								opacity: 0;
+							}							
+						}
+					}
+					.text-right{
+						h5{
+							font-weight: 500;
+							color: #444;
+							font-size: 18px;
+							margin-bottom: 10px;
+							transition: .5s;
+						}
+						p{
+							color: #aaa;
+							transition: .5s;
+							font-size: 12px;
+						}
+					}
+				}
+				&:nth-child(1),&:nth-child(2){
+					margin: 0;
+				}
+			}
+		}
+	}
+}
+//内容1、、结束
+
+
+
+.title::after{
+	background-color: transparent !important;
+}
+.title{
+	background: url(../../img/business/line.jpg) no-repeat left;
+	padding-left: 16px !important;
+	color:#0752ab !important;
+	font-size: 22px !important;
+	margin:50px 0 20px 0 !important;
+}
+.centent .p_{
+	color: #444;
+	font-size: 14px;
+	line-height: 21px;
+}
+.title_b{
+	display: block;
+	max-width: 60%;
+	margin: 80px auto 0 auto;
+}
+.centent_{
+	padding-bottom: 140px;
+}
+strong{
+	font-size: 16px;
+	color: #666;
+	line-height: 30px;
+	font-family: "宋体";
+}
+strong i{
+	margin-left: 28px;
+}
+strong p{
+	font-size: 16px;
+	color: #666;
+	margin: 10px 0 0 50px;
+	font-family: "宋体";
+}
+
+
+
+
+
+// 768以下
+@media screen and (max-width:767px){
+// 图片
+.con_a{
+	.banner{
+		background: url(../../img/walk/20191119192205_3007.jpg) no-repeat center/230% !important; 
+		padding: 16% 0;
+	}
+}
+
+// 内容
+.con_b .centent .top .box{
+	width: 100%;
+}
+.con_b .wrap{
+	width: 100%;
+}
+.con_b .centent .top .box a .box-text h4{
+	font-size: 16px;
+}
+
+.con_b .centent .bottom .box{
+	width: 100%;
+	margin: 0 0 25px 0 !important;
+	&:last-of-type{
+		margin: 0 !important;
+	}
+}
+
+.title_b{
+	display: block;
+	max-width: 90%;
+	margin: 50px auto 0 auto;
+}
+
+
+}
