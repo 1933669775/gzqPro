@@ -1,0 +1,222 @@
+body {
+  overflow-x: hidden;
+}
+.con_a .banner {
+  background: url(../../img/product/20191120164844_0480.jpg) no-repeat center / 122%;
+  text-align: center;
+  padding: 10% 0;
+}
+.con_a .banner p:nth-child(1) {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: rgba(225, 225, 225, 0.4);
+  font-weight: 900;
+}
+.con_a .banner p:nth-child(2) {
+  letter-spacing: 4px;
+  font-weight: 900;
+  color: #fff;
+  font-size: 24px;
+}
+.top-btn {
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #e7e7e7;
+  width: 100%;
+}
+.top-btn ul {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+.top-btn ul .active {
+  background: #0752ab;
+}
+.top-btn ul .active a {
+  color: #fff !important;
+}
+.top-btn ul li {
+  flex: 1;
+  border-right: 1px solid #e7e7e7;
+  text-align: center;
+  font-size: 16px;
+  line-height: 60px;
+}
+.top-btn ul li a {
+  position: relative;
+  z-index: 10;
+  color: #444444;
+  display: block;
+  transition: .5s;
+}
+.top-btn ul li a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: .5s;
+  background: #0752ab;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.top-btn ul li a:hover:after {
+  height: 60px;
+}
+.top-btn ul li a:hover {
+  color: #fff;
+}
+.left-btn {
+  display: block;
+  width: calc(157px);
+  height: 50px;
+  padding-left: 64px;
+  border-radius: 25px;
+  background-image: linear-gradient(90deg, #09308f 0%, #0097e2 100%), linear-gradient(#c5ac84, #c5ac84);
+  margin: 0 auto;
+}
+.left-btn font {
+  color: #fff;
+  line-height: 50px;
+}
+.left-btn img {
+  position: relative;
+  left: 20%;
+}
+.left-btn:hover {
+  background-image: linear-gradient(90deg, #0097e2 0, #09308f 100%), linear-gradient(#c5ac84, #c5ac84);
+}
+.product {
+  width: 100%;
+  padding: 6.25% 0 3%;
+}
+.product .wrap {
+  width: 90%;
+  margin: 0 auto;
+}
+.product .wrap .box {
+  position: relative;
+  display: flex;
+  margin-bottom: 10%;
+}
+.product .wrap .box:hover .img img {
+  transform: scale(1.1);
+}
+.product .wrap .box:hover .text .title {
+  color: #0752ab;
+}
+.product .wrap .box:nth-child(even) .img {
+  display: none;
+}
+.product .wrap .box .img {
+  flex: 1;
+  overflow: hidden;
+}
+.product .wrap .box .img img {
+  display: block;
+  width: 100%;
+  transition: 1.5s;
+}
+.product .wrap .box .none {
+  display: block !important;
+}
+.product .wrap .box:nth-child(odd) .text {
+  padding: 4.3% 0 0 7%;
+}
+.product .wrap .box:nth-child(even) .text {
+  padding: 4.3% 7% 0 0;
+}
+.product .wrap .box .text {
+  flex: 1;
+}
+.product .wrap .box .text .title {
+  display: block;
+  font-size: 30px;
+  transition: 0.5s;
+  color: #333333;
+  margin-bottom: 48px;
+}
+.product .wrap .box .text p {
+  line-height: 28px;
+  color: #666666;
+  font-size: 16px;
+  height: 84px;
+  margin-bottom: 74px;
+}
+.product .wrap .box .back {
+  position: absolute;
+  width: 1920px;
+  background-color: #f4f4f4;
+  height: 100%;
+  z-index: -1;
+  top: 20%;
+  left: 8%;
+}
+.product .wrap .box:nth-child(even) .back {
+  left: auto;
+  right: 8%;
+}
+@media screen and (max-width: 1180px) {
+  .top-btn ul li a:hover::after {
+    height: 120px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .con_a .banner {
+    background: url(../../img/product/20191120164844_0480.jpg) no-repeat center / 191%;
+  }
+  .top-btn {
+    position: relative;
+    top: -1px;
+  }
+  .top-btn ul li {
+    width: 49.577%;
+    flex: none;
+    line-height: 50px;
+  }
+  .top-btn ul {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .top-btn ul li a {
+    font-size: 14px;
+  }
+  .top-btn ul li a:hover::after {
+    height: 50px;
+  }
+  .product .wrap .box {
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  .product .wrap .box .text {
+    padding: 30px 20px !important;
+  }
+  .product .wrap .box .text a {
+    margin-bottom: 14px !important;
+    font-size: 18px !important;
+  }
+  .product .wrap .box .text p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 24px;
+    height: auto;
+  }
+  .product .wrap .box .back {
+    width: 100%;
+    left: 0;
+    right: 0 !important;
+  }
+  .product .wrap .box:nth-child(even) .img {
+    display: block !important;
+  }
+  .product .wrap .box:nth-child(even) .none {
+    display: none !important;
+  }
+  .product .wrap .box:last-of-type {
+    margin-bottom: 40px;
+  }
+}

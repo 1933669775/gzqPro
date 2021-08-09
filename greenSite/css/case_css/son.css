@@ -1,0 +1,176 @@
+.son {
+  background: #f5f5f5;
+  padding: 74px 0 80px 0;
+}
+.son .wrap {
+  width: 90%;
+  margin: 0 auto;
+}
+.son .wrap .header {
+  font-size: 20px;
+  font-weight: 900;
+  color: #444;
+  padding-left: 42px;
+  margin-bottom: 50px;
+  line-height: 25px;
+  position: relative;
+}
+.son .wrap .header::after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: solid 1px #0752ab;
+}
+.son .wrap .header::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  background-color: #0752ab;
+}
+.son .wrap .bottom {
+  background-color: #fff;
+  padding: 65px 0 0 0;
+}
+.son .wrap .bottom .width90 {
+  width: 90%;
+  margin: 0 auto;
+}
+.son .wrap .bottom .width90 .con {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 36px;
+}
+.son .wrap .bottom .width90 .con:nth-child(4) {
+  border-bottom: 0;
+  margin: 0;
+}
+.son .wrap .bottom .width90 .con h2 {
+  font-size: 20px;
+  color: #0752ab;
+  padding-left: 13px;
+  margin-bottom: 20px;
+  background: url(../../img/business/line.jpg) left no-repeat;
+}
+.son .wrap .bottom .width90 .con p {
+  font-size: 16px;
+  color: #666666;
+  line-height: 30px;
+}
+.son .wrap .bottom .width90 .con:last-of-type {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 70px;
+  margin-bottom: 50px;
+}
+.son .wrap .bottom .width90 .con:last-of-type .box {
+  width: 48.333%;
+  position: relative;
+}
+.son .wrap .bottom .width90 .con:last-of-type .box img {
+  display: block;
+  width: 100%;
+}
+.son .wrap .bottom .width90 .con:last-of-type .box .font {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  line-height: 50px;
+  background-color: rgba(30, 98, 178, 0.8);
+  text-align: center;
+  color: #fff;
+  font-weight: 900;
+  font-size: 16px;
+}
+.son .wrap .paging {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 90px;
+}
+.son .wrap .paging a {
+  line-height: 40px;
+}
+.son .wrap .paging a:nth-child(2) {
+  width: 160px;
+  height: 40px;
+  border-radius: 23px;
+  background-color: #F5F5F5;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  transition: .5s;
+  position: relative;
+  z-index: 1000;
+}
+.son .wrap .paging a:nth-child(2):hover {
+  background-color: #0752ab;
+  color: #fff;
+}
+.son .wrap .paging a:nth-child(1),
+.son .wrap .paging a:last-of-type {
+  position: relative;
+  padding-left: 55px;
+}
+.son .wrap .paging a:nth-child(1)::after,
+.son .wrap .paging a:last-of-type::after {
+  content: "<";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #ebebeb;
+  position: absolute;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+  left: 0;
+  top: 0;
+  color: #666666;
+  transition: .5s;
+}
+.son .wrap .paging a:hover::after {
+  background-color: #0752ab;
+  color: #fff;
+}
+.son .wrap .paging a:last-of-type {
+  padding: 0 55px 0 0;
+}
+.son .wrap .paging a:last-of-type::after {
+  content: ">";
+  right: 0;
+  left: auto;
+}
+@media (max-width: 1200px) {
+  .son .wrap .bottom .width90 .con:last-of-type {
+    flex-direction: column;
+  }
+  .son .wrap .bottom .width90 .con:last-of-type .box {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .son .wrap .paging a:nth-child(2) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .son .wrap .paging a:nth-child(1) {
+    position: absolute;
+    left: 40px;
+  }
+  .son .wrap .paging a:last-of-type {
+    position: absolute;
+    right: 40px;
+  }
+}

@@ -1,0 +1,308 @@
+
+.header-top{
+	padding-top: 81px;
+}
+header{
+	width: 100%;
+	background-color: #fff;
+	position: relative;
+	z-index: 1000;
+	top: 0;
+	position: fixed !important;
+}
+
+.logo {
+	padding: 18.55555px 0;
+}
+
+.warp1600 {
+	max-width: 1600px;
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+
+.nav li {
+	float: left;
+	position: relative;
+	margin-right: 50px;
+}
+
+.nav li:last-child {
+	margin-right: 0;
+}
+
+.nav li>a {
+	padding: 30px 0;
+	display: block;
+}
+
+.nav31 {
+	display: none;
+}
+
+nav {
+	display: none;
+}
+
+.nav li .navli-box {
+	line-height: 64px;
+	transition: .8s;
+	height: 0;
+	white-space: nowrap;
+	position: absolute;
+	overflow: hidden;
+	background-color: #fafafa;
+}
+
+.navli-box1 {
+	right: 0;
+}
+
+
+.nav li .navli-box a:hover::after {
+	width: 100%;
+}
+
+.nav li .navli-box a {
+	position: relative;
+	margin: 0 0 0 30px;
+}
+
+.navul li:hover .navli-box {
+	line-height: 64px;
+	height: 64px;
+	transition: .8s;
+	background-color: #fafafa;
+}
+
+
+
+
+
+
+
+
+/* 中小屏的导航 */
+@media (max-width: 999px) {
+	.nav-line{
+		position: relative;
+	}
+	.nav-line::after{
+		content: "";
+		display: block;
+		width: 15px;
+		position: absolute;
+		top: 20px;
+		right: 30px;
+		height: 1px;
+		background-color: #fff;
+	}
+	.header-top{
+		padding-top: 40px;
+	}
+	.logo img {
+		width: 217px;
+	}
+
+	.navmin {
+		display: none !important;
+	}
+
+	.nav {
+		display: block;
+		width: 70%;
+		background-color: #000000;
+		height: 100%;
+		float: right;
+	}
+
+	.nav li {
+		margin: 0;
+		float: none;
+	}
+
+	.nav li a {
+		padding: 0 0 0 5px;
+		margin-left: 25px;
+		line-height: 45px;
+		border-bottom: 1px solid #232530;
+	}
+
+	.nav30 {
+		position: relative;
+		z-index: -10;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+	}
+
+	.close {
+		width: 30px;
+		position: relative;
+		top: 8%;
+		left: 7%;
+	}
+
+	.nav li a font {
+		color: #fff;
+	}
+
+	.menu {
+		width: 33px;
+		height: 30px;
+		margin-top: 22px;
+		z-index: 10000;
+	}
+
+	.mohead {
+		position: relative;
+		left: 100%;
+		z-index: 1;
+		transition: .5s;
+	}
+
+	.menu span {
+		margin-top: 5px;
+		display: block;
+		width: 100%;
+		height: 3px;
+		background-color: #0752ab;
+	}
+
+	nav {
+		display: block !important;
+		position: relative;
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 100%;
+		height: 100%;
+		transition: .5s;
+		z-index: 10001;
+	}
+
+	.nav31 {
+		z-index: -1;
+		background: rgba(0, 0, 0, 0.8);
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		position: fixed;
+		transition: .5s;
+		top: 0;
+		display: block;
+	}
+
+	.nav li .navli-box {
+		position: relative;
+		transition: .5s;
+		display: flex;
+		flex-direction: column;
+		background-color: #000000;
+	}
+
+	.nav li .navli-box a {
+		margin-left: 27px;
+		outline: none;
+		border: 0;
+		color: #fff;
+		font-size: 13px;
+	}
+
+	header .menu {
+		margin-top: 18px;
+	}
+
+	.logo {
+		padding: 15px 0 !important;
+	}
+
+}
+
+
+
+
+
+/* 1200以下到1000 */
+@media (max-width: 1200px) and (min-width: 1000px) {
+	.nav li {
+		margin-right: 35px;
+	}
+
+	.logo img {
+		width: 260px;
+	}
+
+	.nav li a {
+		font-size: 15px;
+	}
+}
+
+
+/* 1000以上 */
+@media (min-width: 1000px) {
+	.nav li a {
+		position: relative;
+	}
+
+	.nav li:hover a font {
+		color: #0752AB;
+		transition: .8s;
+	}
+
+	.nav li a:hover {
+		color: #0752AB;
+		transition: .8s;
+	}
+	/* 默认选中 */
+	.active>a::after{
+		width: 100% !important;
+	}
+	.active font{
+		color: #0752AB !important;
+	}
+	.nav li a::after{
+		content: "";
+		display: block;
+		position: absolute;
+		width: 0;
+		height: 2px;
+		background-color: #0752AB;
+		transition: .8s;
+		top: 79px;
+	}
+	.nav li .after::after{
+		top: 48px !important;
+	}
+	.nav li:hover a::after{
+		width: 100%;
+		height: 2px;
+	}
+	
+
+	.nav li .navli-box a::after{
+		content: "";
+		height: 1px;
+		position: absolute;
+		width: 0;
+		background-color: #0752AB;
+		transition: .8s;
+		top: 28px;
+		left: 0;
+		z-index: 1000;
+	}
+	.nav li .navli-box .huifu::after{
+		top: 55px;
+	}
+	#nav-height {
+		position: absolute;
+		top: 81px;
+		width: 100%;
+		height: 0;
+		background: #fafafa;
+	}
+}
+

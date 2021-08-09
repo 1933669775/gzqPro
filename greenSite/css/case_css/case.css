@@ -1,0 +1,218 @@
+.con_a .banner {
+  background: url(../../img/case/20191120115353_9622.jpg) no-repeat center / 122%;
+  text-align: center;
+  padding: 10% 0;
+}
+.con_a .banner p:nth-child(1) {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: rgba(225, 225, 225, 0.4);
+  font-weight: 900;
+}
+.con_a .banner p:nth-child(2) {
+  letter-spacing: 4px;
+  font-weight: 900;
+  color: #fff;
+  font-size: 24px;
+}
+.case {
+  width: 100%;
+  padding-top: 6.15%;
+  background-color: #F5F5F5;
+}
+.case .left-btn {
+  display: block;
+  width: calc(157px);
+  height: 50px;
+  padding-left: 64px;
+  border-radius: 25px;
+  background-image: linear-gradient(90deg, #09308f 0%, #0097e2 100%), linear-gradient(#c5ac84, #c5ac84);
+  margin: 0 auto;
+}
+.case .left-btn font {
+  color: #fff;
+  line-height: 50px;
+}
+.case .left-btn img {
+  position: relative;
+  left: 20%;
+}
+.case .left-btn:hover {
+  background-image: linear-gradient(90deg, #0097e2 0, #09308f 100%), linear-gradient(#c5ac84, #c5ac84);
+}
+.case .wrap {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.case .wrap .none {
+  display: none;
+}
+.case .wrap .con-none {
+  display: none;
+}
+.case .wrap .con3-content {
+  position: relative;
+  width: 31.4286%;
+  border: 1px solid #e5e5e5;
+  margin-top: 2.8571%;
+  overflow: hidden;
+  background: #fff;
+}
+.case .wrap .con3-content::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url(../../img/index/ind_34.png) center;
+  background-size: 100%;
+  top: 0;
+  opacity: 1;
+  transition: .5s;
+}
+.case .wrap .con3-content:hover::after {
+  opacity: 0.1;
+  transition: .5s;
+}
+.case .wrap .con3-content:hover .img {
+  opacity: 1;
+  transition: .5s;
+}
+.case .wrap .con3-content:hover .con3-line {
+  background-color: #fff !important;
+  transition: .5s;
+}
+.case .wrap .con3-content:hover p {
+  color: #fff !important;
+  transition: .5s;
+}
+.case .wrap .con3-content:hover .btn {
+  background-color: #e3e3e3 !important;
+  transition: .5s;
+}
+.case .wrap .con3-content:hover .btn .img2 {
+  transition: .5s;
+  z-index: 10 !important;
+}
+.case .wrap .con3-content a {
+  position: relative;
+  display: block;
+  padding-bottom: 7%;
+}
+.case .wrap .con3-content a .img {
+  transition: .5s;
+  position: relative;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  opacity: 0;
+}
+.case .wrap .con3-content a .img::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.case .wrap .con3-content a .img img {
+  width: 100%;
+  display: block;
+  height: 100%;
+}
+.case .wrap .con3-content a .box {
+  position: relative;
+  z-index: 10;
+  padding: 13.5% 13.5% 0 13.5%;
+}
+.case .wrap .con3-content a .box .con3-line {
+  width: 20px;
+  height: 2px;
+  margin-bottom: 22px;
+  background-color: #09308f;
+  transition: .5s;
+}
+.case .wrap .con3-content a .box p {
+  transition: .5s;
+  line-height: 30px;
+  color: #333333;
+  height: 60px;
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: 900;
+}
+.case .wrap .con3-content a .box .btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #0752ab;
+  position: relative;
+  transition: .5s;
+}
+.case .wrap .con3-content a .box .btn img {
+  top: 0;
+  position: absolute;
+}
+.case .wrap .con3-content a .box .btn .img2 {
+  z-index: -1;
+  transition: .5s;
+}
+.case .paging {
+  display: flex;
+  justify-content: center;
+  padding: 80px;
+}
+.case .paging .active {
+  color: #fff;
+  background: #0752ab;
+}
+.case .paging a {
+  font-size: 12px;
+  display: block;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  transition: .5s;
+  text-align: center;
+  line-height: 40px;
+  color: #333;
+}
+.case .paging a:hover {
+  color: #fff;
+  background: #0752ab;
+}
+.case .paging a:nth-child(1),
+.case .paging a:last-of-type {
+  width: calc(36px);
+  padding: 0 13px;
+}
+@media (max-width: 1000px) {
+  .case .wrap .con3-content a .box p {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 35px;
+  }
+  .case .wrap .con3-content a .box .con3-line {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 768px) {
+	.con_a .banner {
+	   background: url(../../img/product/20191120164844_0480.jpg) no-repeat center / 191%;
+	}
+  .case .wrap .con3-content {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .case .paging {
+    display: none;
+  }
+  .case .wrap .none {
+    display: block;
+    margin: 50px auto;
+  }
+}

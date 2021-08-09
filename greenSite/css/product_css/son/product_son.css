@@ -1,0 +1,240 @@
+.son_a {
+  width: 100%;
+  padding: 70px 0;
+  background: url(../../../img/product/son/pro_08.jpg) no-repeat center / cover;
+}
+.son_a .wrap {
+  padding: 3.6458% 0;
+  width: 90%;
+  background-color: #fff;
+  margin: 0 auto;
+}
+.son_a .wrap .container {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.son_a .wrap .container .left {
+  width: 40%;
+}
+.son_a .wrap .container .left .swiper-container {
+  width: 100%;
+  height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.son_a .wrap .container .left .swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+.son_a .wrap .container .left .gallery-thumbs .swiper-slide {
+  height: 100%;
+}
+.son_a .wrap .container .left .swiper-button-white {
+  height: 100px;
+  top: 22px;
+  background-color: #ccc;
+}
+.son_a .wrap .container .left .swiper-button-next {
+  right: 0;
+}
+.son_a .wrap .container .left .swiper-button-prev {
+  left: 0;
+}
+.son_a .wrap .container .left .swiper-slide-thumb-active {
+  border: 3px solid #5500ff;
+}
+.son_a .wrap .container .left .swiper-slide img {
+  width: 100%;
+  display: block;
+}
+.son_a .wrap .container .left .gallery-thumbs {
+  margin-top: 10px;
+  height: 100px;
+  width: 95%;
+  padding: 0 27px;
+}
+.son_a .wrap .container .right {
+  width: 50%;
+  padding-top: 65px;
+}
+.son_a .wrap .container .right h2 {
+  font-size: 24px;
+  line-height: 40px;
+  color: #0752ab;
+  margin-bottom: 40px;
+}
+.son_a .wrap .container .right .text {
+  text-align: justify;
+  color: #666666;
+  font-size: 16px;
+  line-height: 30px;
+}
+.son_b {
+  width: 100%;
+}
+.son_b .top {
+  width: 100%;
+  background: #0752ab;
+  height: 60px;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+.son_b .top .wrap {
+  width: 90%;
+  margin: 0 auto;
+}
+.son_b .top .wrap h3 {
+  width: 90%;
+  margin: 0 auto;
+  color: #fff;
+  position: relative;
+  font-size: 18px;
+}
+.son_b .top .wrap h3::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 6.455%;
+  height: 2px;
+  background-color: #FFFFFF;
+  bottom: 0;
+}
+.son_b .paging {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  margin-top: 50px;
+}
+.son_b .paging a {
+  line-height: 40px;
+}
+.son_b .paging a:nth-child(2) {
+  width: 160px;
+  height: 40px;
+  border-radius: 23px;
+  background-color: #F5F5F5;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  transition: .5s;
+  position: relative;
+  z-index: 1000;
+}
+.son_b .paging a:nth-child(2):hover {
+  background-color: #0752ab;
+  color: #fff;
+}
+.son_b .paging a:nth-child(1),
+.son_b .paging a:last-of-type {
+  position: relative;
+  padding-left: 55px;
+}
+.son_b .paging a:nth-child(1)::after,
+.son_b .paging a:last-of-type::after {
+  content: "<";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #ebebeb;
+  position: absolute;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+  left: 0;
+  top: 0;
+  color: #666666;
+  transition: .5s;
+}
+.son_b .paging a:hover::after {
+  background-color: #0752ab;
+  color: #fff;
+}
+.son_b .paging a:last-of-type {
+  padding: 0 55px 0 0;
+}
+.son_b .paging a:last-of-type::after {
+  content: ">";
+  right: 0;
+  left: auto;
+}
+.son_b .wrap_b {
+  background-color: #fff;
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 50px;
+}
+.son_b .wrap_b .box {
+  width: 90%;
+  margin: 0 auto;
+}
+.son_b .wrap_b .box h4 {
+  font-size: 18px;
+  color: #0752ab;
+  padding-left: 13px;
+  position: relative;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.son_b .wrap_b .box h4::after {
+  content: "";
+  width: 3px;
+  position: absolute;
+  background: url(../../../img/business/line.jpg) no-repeat center center / cover;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.son_b .wrap_b .box ul {
+  margin-bottom: 36px;
+}
+.son_b .wrap_b .box ul h5 {
+  font-weight: 500;
+  font-size: 16px;
+  color: #666666;
+  font-family: "宋体";
+}
+.son_b .wrap_b .box ul li,
+.son_b .wrap_b .box ul p {
+  text-indent: 30px;
+  color: #666666;
+  line-height: 28px;
+  font-size: 16px;
+  font-family: "宋体";
+}
+.son_b .wrap_b .box ul p {
+  text-indent: 45px;
+}
+@media (max-width: 1000px) {
+  .gallery-top {
+    height: 30% !important;
+  }
+}
+@media (max-width: 768px) {
+  .son_a .wrap .container {
+    flex-direction: column;
+  }
+  .son_a .wrap .container .left {
+    width: 100%;
+  }
+  .son_a .wrap .container .left .gallery-top {
+    height: 400px !important;
+  }
+  .son_a .wrap .container .right {
+    width: 100%;
+  }
+  .son_b .paging {
+    position: relative;
+    margin-bottom: 70px;
+  }
+  .son_b .paging a:nth-child(2) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 60px;
+  }
+}
