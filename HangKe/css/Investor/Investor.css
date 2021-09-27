@@ -1,0 +1,304 @@
+.Investor1 {
+  background: url(../../img/Investor/inv_02.jpg) no-repeat center top / cover;
+  padding: 6.25% 0 13.8541%;
+}
+.Investor1 .wrap {
+  width: 90%;
+  margin: 0 auto;
+}
+.Investor1 .wrap .content h2 {
+  font-size: 24px;
+  margin-bottom: 60px;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+.Investor1 .wrap .content .box {
+  background-color: #0061a6;
+  border: solid 2px #00528c;
+  padding: 45px 60px;
+}
+.Investor1 .wrap .content .box > p:first-child {
+  color: #c3cbd4;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+.Investor1 .wrap .content .box > p:first-child > span {
+  margin-left: 5px;
+  font-size: 24px;
+  color: #ffffff;
+}
+.Investor1 .wrap .content .box > p:last-of-type {
+  font-size: 12px;
+  color: #a1b2bf;
+}
+.Investor1 .wrap .content .box > p:last-of-type span {
+  color: #a1b2bf;
+}
+.Investor1 .wrap .content .box .text {
+  display: flex;
+  justify-content: space-between;
+}
+.Investor1 .wrap .content .box .text > span {
+  display: block;
+  line-height: 54px;
+  height: 54px;
+  font-size: 60px;
+  color: rgba(255, 255, 255, 0.9);
+  padding-right: 110px;
+  background: url(../../img/Investor/rmb.png) no-repeat right;
+}
+.Investor1 .wrap .content .box .text ul {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  position: relative;
+  top: -20px;
+}
+.Investor1 .wrap .content .box .text ul li p {
+  color: #c3cad2;
+  font-size: 16px;
+  margin-bottom: 34px;
+}
+.Investor1 .wrap .content .box .text ul li span {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 30px;
+}
+.Investor2 {
+  padding: 6.25% 0 5.2083%;
+  background: url(../../img/Investor/inv_03.jpg) no-repeat top center / cover;
+}
+.Investor2 .wrap {
+  width: 90%;
+  margin: 0 auto;
+}
+.Investor2 .wrap .Investor2_btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+.Investor2 .wrap .Investor2_btn .btn {
+  width: 180px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: rgba(249, 249, 249, 0.08);
+  border: solid 1px rgba(229, 229, 229, 0.3);
+  color: #fff;
+  cursor: pointer;
+  transition: .5s;
+}
+.Investor2 .wrap .Investor2_btn .btn:nth-child(1) {
+  margin-right: 40px;
+}
+.Investor2 .wrap .Investor2_btn .btn:hover {
+  background-color: #bc0715;
+  border-color: #bc0715;
+}
+.Investor2 .wrap .Investor2_btn .active_btn {
+  background-color: #bc0715;
+  border-color: #bc0715;
+}
+.Investor2 .wrap .Investor2_box {
+  border: solid 1px rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.04);
+  transition: .5s;
+}
+.Investor2 .wrap .Investor2_box a {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.Investor2 .wrap .Investor2_box a .left {
+  display: flex;
+  height: 58px;
+  line-height: 58px;
+}
+.Investor2 .wrap .Investor2_box a .left p {
+  font-size: 16px;
+  color: #fff;
+}
+.Investor2 .wrap .Investor2_box a .left p:first-child {
+  opacity: 0.6;
+  margin-right: 12px;
+}
+.Investor2 .wrap .Investor2_box a .right {
+  margin-right: 30px;
+}
+.Investor2 .wrap .Investor2_box a .right img {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.Investor2 .wrap .Investor2_box:hover {
+  background-color: #0062a7;
+}
+.announcement {
+  height: 150px;
+  overflow: auto;
+  padding: 10px;
+}
+.announcement .tab_nav {
+  display: flex;
+}
+.announcement .tab_nav .btn {
+  text-align: center;
+  font-size: 16px;
+  padding: 0 30px;
+  margin-right: 10px;
+  line-height: 40px;
+  border: 1px solid #7cc7da;
+  border-bottom: 0;
+  letter-spacing: 1px;
+  color: #9f9f9f;
+  cursor: pointer;
+}
+.announcement .tab_nav .ann_active {
+  background: #7cc7da;
+}
+.announcement .tab_content {
+  border: 1px solid #7cc7da;
+}
+.announcement .tab_content .box {
+  margin: 10px 30px;
+  padding: 15px 0px;
+}
+.announcement .tab_content .box li {
+  display: flex;
+  justify-content: space-between;
+  line-height: 33px;
+}
+.announcement .tab_content .box li a {
+  display: block;
+  max-width: 70%;
+  min-width: 200px;
+  font-size: 14px;
+  color: #333333;
+  transition: .5s;
+}
+.announcement .tab_content .box li a i {
+  font-size: 20px;
+  color: #7cc7da;
+  position: relative;
+  top: 2px;
+  margin-right: 8px;
+}
+.announcement .tab_content .box li a:hover {
+  color: #9f9f9f;
+}
+.announcement .tab_content .box li span {
+  color: #9f9f9f;
+}
+.announcement .tab_content .paging_content {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.announcement .tab_content .paging_content > div {
+  height: 26px;
+  line-height: 26px;
+  border: 1px solid #ccc;
+  border-right: 0;
+  padding: 0 8px;
+  font-size: 14px;
+  color: #666;
+  cursor: pointer;
+}
+.announcement .tab_content .paging_content > div:last-of-type {
+  border: 1px solid #ccc;
+}
+.announcement .tab_content .paging_content .paging_btn {
+  border: 0;
+  display: flex;
+  padding: 0;
+}
+.announcement .tab_content .paging_content .paging_btn span {
+  display: block;
+  height: 26px;
+  line-height: 26px;
+  border: 1px solid #ccc;
+  padding: 0 8px;
+  font-size: 14px;
+  border-right: 0;
+  color: #666;
+  cursor: pointer;
+}
+.announcement .tab_content .paging_content .paging_btn .paging_active {
+  background-color: #7cc7da;
+  font-weight: 900;
+}
+@media (min-width: 1440px) {
+  .Investor1 .wrap .content .box {
+    padding: 68px 100px;
+  }
+  .Investor1 .wrap .content h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 1024px) {
+  .Investor1 .wrap .content .box p:first-child {
+    font-size: 16px;
+  }
+  .Investor1 .wrap .content .box p:first-child > span {
+    font-size: 20px;
+  }
+  .Investor1 .wrap .content .box .text .num {
+    padding-right: 60px;
+    font-size: 48px;
+    background-size: 60px;
+    background-position: right 16px;
+  }
+  .Investor1 .wrap .content .box .text ul {
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .Investor1 .wrap .content h2 {
+    font-size: 18px;
+  }
+  .Investor1 .wrap .content .box {
+    padding: 20px;
+  }
+  .Investor1 .wrap .content .box .text {
+    flex-direction: column;
+  }
+  .Investor1 .wrap .content .box .text .num {
+    font-size: 30px;
+    height: 40px;
+    line-height: 40px;
+    padding-right: 46px;
+    background-size: 46px;
+    width: 75px;
+    background-position: right;
+  }
+  .Investor1 .wrap .content .box .text ul {
+    width: 100%;
+    top: 0;
+    margin: 20px 0;
+  }
+  .Investor1 .wrap .content .box .text ul li p {
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+  .Investor1 .wrap .content .box .text ul li span {
+    font-size: 20px;
+  }
+  .Investor2 .wrap .Investor2_btn .btn {
+    width: 120px;
+  }
+  .Investor2 .wrap .Investor2_btn .btn:nth-child(1) {
+    margin-right: 20px;
+  }
+  .Investor2 .wrap .box a .left p {
+    font-size: 14px;
+  }
+  .Investor2 .wrap .box a .left p:first-child {
+    margin-right: 8px;
+  }
+  .Investor2 .wrap .box a .right {
+    display: none;
+  }
+}
