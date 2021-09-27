@@ -1,0 +1,204 @@
+.news {
+  width: 100%;
+  padding: 6.25% 0 4.1666%;
+  background: url(../../img/news/new_09.jpg) no-repeat center top / cover;
+}
+.news .wrap {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 40px;
+}
+.news .wrap .content {
+  background: #fff;
+  width: 23.125%;
+  margin-right: 2.5%;
+}
+.news .wrap .content:last-of-type {
+  margin: 0;
+}
+.news .wrap .content .box {
+  padding: 30px 35px;
+  text-align: center;
+}
+.news .wrap .content .box .img {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+.news .wrap .content .box .img img {
+  width: 100%;
+  transition: .4s;
+}
+.news .wrap .content .box .num {
+  font-size: 36px;
+  letter-spacing: 4px;
+  color: #666666;
+  font-family: "Digital-7";
+  font-weight: 900;
+  padding-bottom: 10px;
+  width: 50%;
+  margin: 0 auto;
+  border-bottom: 1px solid #e5e5e5;
+  transition: .4s;
+}
+.news .wrap .content .box .time {
+  font-family: "Digital-7";
+  transition: .4s;
+  letter-spacing: 2px;
+  font-weight: 900;
+  color: #4f4f4f;
+  margin: 14px 0 30px 0;
+}
+.news .wrap .content .box .text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #333;
+}
+.news .wrap .content .box .btn {
+  position: relative;
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  border: solid 1px #e5e5e5;
+  line-height: 38px;
+}
+.news .wrap .content .box .btn span {
+  margin-left: 15px;
+  color: #999999;
+  font-size: 12px;
+}
+.news .wrap .content .box .btn img {
+  height: 10px;
+  margin: 15px 15px 0 ;
+}
+.news .wrap .content .box .btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background: #0062a7;
+  transition: .4s;
+}
+.news .wrap .content:hover .box .btn::after {
+  width: 100%;
+}
+.news .wrap .content:hover .box .btn span {
+  z-index: 100;
+  color: #fff;
+}
+.news .wrap .content:hover .box .btn img {
+  z-index: 100;
+}
+.news .wrap .content:hover .box .img {
+  overflow: hidden;
+}
+.news .wrap .content:hover .box .img img {
+  transform: scale(1.1);
+}
+.news .paging_content {
+  display: flex;
+  width: calc(90% - 60px);
+  margin: 0 auto;
+  justify-content: space-between;
+  background-color: #005999;
+  margin-top: 3.3%;
+  border-radius: 10px;
+  border: solid 1px #00528c;
+  padding: 0 30px;
+}
+.news .paging_content .paging_up,
+.news .paging_content .paging_down {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  position: relative;
+}
+.news .paging_content .paging_up img,
+.news .paging_content .paging_down img {
+  opacity: 0.4;
+  transition: .5s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.news .paging_content .paging_up:hover img,
+.news .paging_content .paging_down:hover img {
+  opacity: 1;
+}
+.news .paging_content .paging_none {
+  display: none !important;
+}
+.news .paging_content .paging_max {
+  display: inline-block !important;
+}
+.news .paging_content .paging_btn {
+  line-height: 80px;
+}
+.news .paging_content .paging_btn span {
+  color: #dce2e6;
+  font-size: 18px;
+  margin-right: 35px;
+}
+.news .paging_content .paging_btn p {
+  font-size: 36px;
+  color: #ffffff;
+  position: relative;
+}
+.news .paging_content .paging_btn p::after {
+  content: "/";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -24px;
+}
+.news .paging_content .paging_first,
+.news .paging_content .paging_last {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .news .wrap .content .box {
+    padding: 10px 12px;
+  }
+  .news .wrap .content .box .btn img {
+    position: absolute;
+    right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .news .wrap {
+    flex-direction: column;
+  }
+  .news .wrap .content {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .news .wrap .content .box .text {
+    text-align: left;
+    font-size: 14px;
+  }
+  .news .paging_content .paging_btn {
+    line-height: 60px;
+  }
+  .news .paging_content .paging_btn span {
+    margin-right: 15px;
+  }
+  .news .paging_content .paging_btn p {
+    font-size: 24px;
+  }
+  .news .paging_content .paging_btn p::after {
+    left: -14px;
+  }
+  .news .paging_content .paging_up,
+  .news .paging_content .paging_down {
+    height: 60px;
+    width: 60px;
+  }
+}

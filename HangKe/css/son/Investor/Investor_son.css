@@ -1,0 +1,117 @@
+.Investor_son {
+  background: url(../../../img/news/new_10.jpg) no-repeat center top / cover;
+  padding: 60px 0;
+}
+.Investor_son .wrap {
+  width: 90%;
+  margin: 0 auto;
+}
+.Investor_son .wrap .head h1 {
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.Investor_son .wrap .head .text {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+  padding-bottom: 24px;
+}
+.Investor_son .wrap .head .text div span {
+  color: #e5e5e5;
+  font-size: 14px;
+}
+.Investor_son .wrap .content {
+  padding: 50px 0;
+}
+.Investor_son .wrap .content p,
+.Investor_son .wrap .content b {
+  display: block;
+  text-indent: 32.0px;
+  font-size: 14px;
+  color: rgba(229, 229, 229, 0.9);
+  line-height: 24px;
+}
+.Investor_son .wrap .bottom {
+  background-color: #0062a7;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.Investor_son .wrap .bottom .down,
+.Investor_son .wrap .bottom .up {
+  width: 100%;
+}
+.Investor_son .wrap .bottom .down a,
+.Investor_son .wrap .bottom .up a {
+  text-align: center;
+  position: relative;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Investor_son .wrap .bottom .down a p,
+.Investor_son .wrap .bottom .up a p {
+  font-size: 18px;
+  margin-bottom: 16px;
+  color: #e5e5e5;
+}
+.Investor_son .wrap .bottom .down a span,
+.Investor_son .wrap .bottom .up a span {
+  color: #e5e5e5;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+.Investor_son .wrap .bottom .meun {
+  width: 100px;
+  height: 100px;
+  background: #005999;
+}
+@media (max-width: 768px) {
+  .Investor_son .wrap .bottom {
+    position: relative;
+    flex-direction: column;
+  }
+  .Investor_son .wrap .bottom .down,
+  .Investor_son .wrap .bottom .up {
+    margin-left: 10px;
+  }
+  .Investor_son .wrap .bottom .down a,
+  .Investor_son .wrap .bottom .up a {
+    position: static;
+    transform: none;
+    text-align: left;
+  }
+  .Investor_son .wrap .bottom .down a p,
+  .Investor_son .wrap .bottom .up a p {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  .Investor_son .wrap .bottom .down a span,
+  .Investor_son .wrap .bottom .up a span {
+    width: 80%;
+    margin-right: 20%;
+    font-size: 14px;
+    text-align: left;
+  }
+  .Investor_son .wrap .bottom .up {
+    margin-bottom: 10px;
+  }
+  .Investor_son .wrap .bottom .meun {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .Investor_son .wrap .bottom .meun a img {
+    width: 60px;
+    height: 60px;
+  }
+}
