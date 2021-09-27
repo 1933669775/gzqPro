@@ -21,7 +21,9 @@
 	<body>
 		<div class="headerNav">
 			<script>
-				$(".headerNav").load("json/nav.html")
+				$(".headerNav").load("json/nav.html",function(){
+					$.getScript("js/nav.js");
+				})
 			</script>
 		</div>
 		<!-- 内容部分1 -->
