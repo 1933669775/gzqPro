@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta http-equiv="X-UA-Compatible" content="IE=dege"  />
+		<meta name="viewport" content="width=device-width,inital
+			-scale=1,maximum-scale=1,user-scalable=no">
+		<meta content="telephone=no" name="format-detection">
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/currency.css"/>
+		<link rel="stylesheet" type="text/css" href="css/css.css"/>
+		<link rel="stylesheet" type="text/css" href="css/nav.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/fullpage.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+	</head>
+	<style type="text/css">
+		/* 云朵动画 */
+		@-webkit-keyframes cloud1 {
+		  0% {
+			  left: 0px;
+		  }
+		  50% {
+		  	  left: 100px;
+		  }
+		  100% {
+			  left: 0;
+		  }
+		}
+		@-webkit-keyframes cloud2 {
+		  0% {
+			  left: -65px;
+		  }
+		  50% {
+		  	  left: 50px;
+		  }
+		  100% {
+			  left: -65px;
+		  }
+		}
+	</style>
+	<body>
+		<!-- 我来组成头部！ -->
+		<header>
+			<div class="wrap">
+				<div class="header_logo">
+					<a href="index.html" class="logo"><img src="img/index/logo.png" ></a>
+					<div class="num_img"><img src="img/index/gupng.png" ></div>
+				</div>
+				<div class="header_nav">
+					<div class="staff">
+						<div class="img">
+							<img src="img/index/rkbg.png" >
+							<p>员工入口</p>
+							<img src="img/index/rkjt.png" id="rkjt">
+						</div>
+						<ul class="tow_nav">
+							<li><a href="http://oa.chr-group.net:800/">员工入口</a></li>
+							<li><a href="http://mail.chr-group.net/">邮箱入口</a></li>
+						</ul>
+					</div>
+					<div class="contacts">
+						<div>
+							<p>
+								<img src="img/index/phone_03.png" />
+								<img src="img/index/phone_03_a.png" />
+							</p>
+							<ul>
+								<li>0571-8646-3544</li>
+							</ul>
+						</div>
+						<div>
+							<p>
+								<img src="img/index/qq.png" >
+								<img src="img/index/qq_a.png" >
+							</p>
+							<ul>
+								<li><a href="http://wpa.qq.com/msgrd?v=3&uin=3607403244&site=qq&menu=yes" target="_blank">国内业务</a></li>
+								<li><a href="http://wpa.qq.com/msgrd?v=3&uin=3274552674&site=qq&menu=yes" target="_blank">Int.Sales</a></li>
+								<li><a href="http://wpa.qq.com/msgrd?v=3&uin=401811723&site=qq&menu=yes" target="_blank">Int.A/S</a></li>
+							</ul>
+						</div>
+						<div>
+							<p>
+								<img src="img/index/wx.png" >
+								<img src="img/index/wx_a.png" >
+							</p>
+							<ul><img src="img/index/20210308141222_3822.png" ></ul>
+						</div>
+						<div>
+							<p>
+								<img src="img/index/lang.png" >
+								<img src="img/index/lang_a.png" >
+							</p>
+						</div>
+					</div>
+					<div class="nav">
+						<img src="img/index/menuline.png" class="nav_acrive">
+						<img src="img/index/close.png" >
+					</div>
+				</div>
+				<!-- 小屏按钮 -->
+				<div class="menu none" id="nav_menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</header>
+		<!-- 头部结束 -->
+		<!-- 大屏背景 -->
+		<div class="back"></div>
+		<!-- 大屏导航开始 -->
+		<nav>
+			<ul>
+				<div id="nav_img">
+				</div>
+				<li>
+					<a href="index.html"><p>首页</p><p>Home</p></a>
+				</li>
+				<li>
+					<a href="About.html"><p>杭可 · 印象</p><p>About</p></a>
+				</li>
+				<li>
+					<a href="products.html"><p>杭可 · 产品</p><p>Products</p></a>
+				</li>
+				<li>
+					<a href="Services.html"><p>杭可 · 服务</p><p>Services</p></a>
+				</li>
+				<li>
+					<a href="Investor.html"><p>投资者关系</p><p>Investor</p></a>
+				</li>
+				<li>
+					<a href="news.html"><p>杭可 · 资讯</p><p>News</p></a>
+				</li>
+				<li>
+					<a href="Talents.html"><p>杭可 · 人才</p><p>Talents</p></a>
+				</li>
+				<li>
+					<a href="Contact.html"><p>杭可 · 联系</p><p>Contact</p></a>
+				</li>
+			</ul>
+		</nav>
+		<!-- 大屏导航结束 -->
+		<!-- 小屏背景 -->
+		<div class="back_lt back_lt_active none" id="back_lt">
+			<img src="img/index/close.png" >
+		</div>
+		<!-- 小屏幕导航开始 -->
+		<ul class="nav_lt nav_lt_active none" id="nav_lt">
+			<li><a href="index.html">网站首页</a></li>
+			<li>
+				<p>杭可 · 印象</p>
+				<ul>
+					<li><a href="About.html#About_1">公司简介</a></li>
+					<li><a href="About.html#About_2">发展历程</a></li>
+					<li><a href="About.html#About_3">技术实力</a></li>
+					<li><a href="About.html#About_4">生产能力</a></li>
+					<li><a href="About.html#About_5">合作伙伴</a></li>
+					<li><a href="About.html#About_6">企业文化</a></li>
+				</ul>
+			</li>
+			<li>
+				<p>杭可 · 产品</p>
+				<ul>
+					<li><a href="products.html">软包动力后处理系统</a></li>
+					<li><a href="products.html">方形动力后处理系统</a></li>
+					<li><a href="products.html">圆柱后处理系统</a></li>
+					<li><a href="products.html">软包数码后处理系统</a></li>
+					<li><a href="products.html">测试系统</a></li>
+					<li><a href="products.html">物流设备</a></li>
+					<li><a href="products.html">软件系统</a></li>
+				</ul>
+			</li>
+			<li>
+				<p>杭可 · 服务</p>
+				<ul>
+					<li><a href="Services.html#Services1_1">服务理念</a></li>
+					<li><a href="Services.html#Services1_2">服务网点</a></li>
+					<li><a href="Services.html#Services1_3">服务热线</a></li>
+					<li><a href="Services.html#Services1_4">文档下载</a></li>
+				</ul>
+			</li>
+			<li>
+				<p>投资者关系</p>
+				<ul>
+					<li><a href="Investor.html#Investor1">股票动态</a></li>
+					<li><a href="Investor.html#Investor2">公司公告</a></li>
+				</ul>
+			</li>
+			<li>
+				<p>杭可 · 资讯</p>
+				<ul>
+					<li><a href="news.html#news">行业新闻</a></li>
+					<li><a href="news.html#news">杭可动态</a></li>
+				</ul>
+			</li>
+			<li>
+				<p>杭可 · 人才</p>
+				<ul>
+					<li><a href="Talents.html#Talents_1">人才理念</a></li>
+					<li><a href="Talents.html#Talents_2">培训发展</a></li>
+					<li><a href="Talents.html#Talents_3">员工风采</a></li>
+					<li><a href="Talents.html#Talents_4">招贤纳士</a></li>
+				</ul>
+			</li>
+			<li>
+				<p>杭可 · 联系</p>
+				<ul>
+					<li><a href="Contact.html#Contact_1">联系方式</a></li>
+					<li><a href="Contact.html#Contact_2">在线留言</a></li>
+				</ul>
+			</li>
+		</ul>
+		<!-- 小屏幕导航结束 -->
+		<!-- fullpage的右侧按钮导航 -->
+		<ul id="menu" style="z-index: 100;">
+			<li data-menuanchor="page1" class="active"><a href="#page1"></a><span>banner</span></li>
+			<li data-menuanchor="page2"><a href="#page2"></a><span>product</span></li>
+			<li data-menuanchor="page3"><a href="#page3"></a><span>about</span></li>
+			<li data-menuanchor="page4"><a href="#page4"></a><span>service</span></li>
+			<li data-menuanchor="page5"><a href="#page5"></a><span>partner</span></li>
+			<li data-menuanchor="page6"><a href="#page6"></a><span>news</span></li>
+			<li data-menuanchor="page7"><a href="#page7"></a><span>footer</span></li>
+		</ul>
+		<!-- fullpage的右侧按钮导航结束 -->
+		<!-- fullpage主体内容 -->
+		<div id="dowebok">
+			<!-- 1屏================================= -->
+			<div class="section">
+				<div class="head_mp4">
+					<!-- data-keepplaying:滚动回来视频依然在播放 -->
+					<video data-keepplaying src="video/hangke_video.mp4"   loop="loop" autoplay="autoplay" muted="muted"></video>
+				</div>
+				<div class="banner_1 none"><img src="img/index/20190813110312_5495.jpg" ></div>
+				<div class="content">
+					<div class="text">
+						<p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">锂电池智慧工厂解决方案供应商</p>
+						<p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">Lithium-ion Battery Intelligent Factory Solution Supplier</p>
+					</div>
+					<div class="back_blue"></div>
+					<a href="products.html" class="SeeMore">查看更多</a>
+				</div>
+				<div id="ind_down">
+					<a href="#page2">
+						<img src="img/index/scrolldown.png" >
+						<div><p></p></div>
+					</a>
+				</div>
+			</div>
+			<!-- 2屏================================= -->
+			<div class="section">
+				<div class="back_wrap">
+					<div class="back_2" id="back_2"></div>
+				</div>
+				<div class="swiper-container1 swiper-container">
+				    <div class="swiper-wrapper">
+				      <div class="swiper-slide">
+						  <div class="header_img">
+							  <img src="img/index/ind_03.png" >
+						  </div>
+						  <div class="text">
+							  <p>圆柱型锂电系统</p>
+							  <p>Cylindrical Lithium-ion Battery System</p>
+						  </div>
+					  </div>
+				      <div class="swiper-slide">
+						  <div class="header_img">
+							 <img src="img/index/ind_16.png" >
+						  </div>
+						  <div class="text">
+							  <p>方型锂电系统</p>
+							  <p>Prismatic type lithium battery System</p>
+						  </div>
+					  </div>
+				      <div class="swiper-slide">
+						  <div class="header_img">
+							 <img src="./img/index/ind_17.png" >
+						  </div>
+						  <div class="text">
+							  <p>软包锂电系统</p>
+							  <p>Polymer lithium battery System</p>
+						  </div>
+					  </div>
+				    </div>
+				    <!-- Add Pagination -->
+				  </div>
+				  <div class="swiper-pagination"></div>
+			</div>
+			<!-- 3屏================================= -->
+			<div class="section" style="overflow: hidden;">
+				<div class="img_box">
+					<div class="back3_img1"></div>
+					<div class="back3_img2"></div>
+				</div>
+				<div class="ind_text_top">
+					<h2>杭可简介</h2>
+					<p>About Us</p>
+					<p>浙江杭可科技股份有限公司致力于打造全球充放电行业的引领者，成为全球一流的集销售、研发、制造、服务为一体的新能源锂电池设备方案解决供应商。 </p>
+				</div>
+				<div class="ind3_an">
+					<div class="box">
+						<p>在职员工</p>
+						<div class="pie_progress pie_progress1" role="progressbar" data-goal="33">
+							<span class="pie_progress__number">0</span>
+							<div class="pie_progress__label">人</div>
+						</div>
+					</div>
+					<div class="box">
+						<p>研发团队</p>
+						<div class="pie_progress pie_progress2" role="progressbar" data-goal="33">
+							<span class="pie_progress__number">0</span>
+							<div class="pie_progress__label">人</div>
+						</div>
+					</div>
+					<div class="box">
+						<p>厂区面积</p>
+						<div class="pie_progress pie_progress3" role="progressbar" data-goal="33">
+							<span class="pie_progress__number">0</span>
+							<div class="pie_progress__label">万方</div>
+						</div>
+					</div>
+				</div>
+				<div class="ind3_banner none">
+					<img src="img/index/ind_05.jpg" >
+				</div>
+			</div>
+			<!-- 4屏================================= -->
+			<div class="section">
+				<div class="title">
+					<h3>实力杭可</h3>
+					<p>Hangke Strength</p>
+				</div>
+				<div class="wrap">
+					<div class="content" style="background: url(img/index/20190806222921_3490.jpg) center/ cover;">
+						<div class="box">
+							<p class="img"><img src="img/index/20190806222913_3325.png" ></p>
+							<div class="line"></div>
+							<p class="text">研发实力</p>
+							<p class="En">R&D STRENGTH</p>
+							<a href="About.html#About_3" class="SeeMore">查看更多</a>
+						</div>
+					</div>
+					<div class="content" style="background: url(img/index/20190806223006_5366.jpg) center/ cover;">
+						<div class="box">
+							<p class="img"><img src="img/index/20190806223003_4304.png" ></p>
+							<div class="line"></div>
+							<p class="text">全球服务网点</p>
+							<p class="En">GLOBAL SERVICE NETWORK</p>
+							<a href="Services.html#Services1_2" class="SeeMore">查看更多</a>
+						</div>
+					</div>
+					<div class="content" style="background: url(img/index/20190806223036_6603.jpg) center/cover;">
+						<div class="box">
+							<p class="img"><img src="img/index/20190806223032_8121.png" ></p>
+							<div class="line"></div>
+							<p class="text">高端装备制造</p>
+							<p class="En">HIGH-END EQUIPMENT</p>
+							<a href="products.html" class="SeeMore">查看更多</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 5屏================================= -->
+			<div class="section">
+				<div class="wrap">
+					<div class="back5_img"><img src="img/index/info_icon.png" ></div>
+					<div class="content">
+						<div class="left">
+							<div class="ind_text_top" style="width: 100%;position: relative; z-index: 100; padding: 0;">
+								<h2>合作伙伴</h2>
+								<p>Partners</p>
+								<p style="width: 100%;">依托专业技术、精细化管理和贴身服务，杭可的合作伙伴遍布全球。</p>
+								<a href="About.html#About_5" class="SeeMore">查看更多</a>
+							</div>
+						</div>
+						<div class="right">
+							<img src="img/index/cloud_01.png" class="cloud1">
+							<img src="img/index/cloud_02.png" class="cloud2">
+							<img src="img/index/dq.png" class="dq">
+							<div class="posiContnt" id="posiContnt">
+								<div class="posiBox">
+									<div class="font">日本</div>
+									<div class="posiImg">
+										<img src="img/index/local.png" >
+										<img src="img/index/local_a.png" >
+									</div>
+								</div>
+								<div class="posiBox">
+									<div class="font">美国</div>
+									<div class="posiImg">
+										<img src="img/index/local.png" >
+										<img src="img/index/local_a.png" >
+									</div>
+								</div>
+								<div class="posiBox">
+									<div class="font">波兰</div>
+									<div class="posiImg">
+										<img src="img/index/local.png" >
+										<img src="img/index/local_a.png" >
+									</div>
+								</div>
+								<div class="posiBox">
+									<div class="font">韩国</div>
+									<div class="posiImg">
+										<img src="img/index/local.png" >
+										<img src="img/index/local_a.png" >
+									</div>
+								</div>
+								<div class="posiBox">
+									<div class="font">中国</div>
+									<div class="posiImg">
+										<img src="img/index/local.png" >
+										<img src="img/index/local_a.png" >
+									</div>
+								</div>
+								<div class="posiBox">
+									<div class="font">马拉西亚</div>
+									<div class="posiImg">
+										<img src="img/index/local.png" >
+										<img src="img/index/local_a.png" >
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 6屏================================= -->
+			<div class="section">
+				<div class="wrap">
+					<div class="ind_text_top" style="margin-bottom: 3.125%;">
+						<h2 style="margin-bottom: 5px;">新闻资讯</h2>
+						<p style="color: #c2d1e0;">News and Information</p>
+					</div>
+					<div class="content">
+						<div class="swiper-container2 swiper-container">
+						    <div class="swiper-wrapper">
+						      <div class="swiper-slide">
+								  <a href="son/news/news_son_1.html" class="box">
+								  	<div class="img"><img src="img/index/20210813161942_4101.jpg" ></div>
+								  	<div class="text">
+								  		<p class="ellipsis">中国锂电池负极材料行业大数据分析</p>
+								  		<div class="line"></div>
+								  		<div class="jt">
+								  			<div class="right">
+								  				<img src="img/index/new_jt.png" >
+								  				<img src="img/index/new_jt_a.png" >
+								  			</div>
+								  		</div>
+								  	</div>
+								  </a>
+							  </div>
+						      <div class="swiper-slide">
+								  <a href="son/news/news_son_1.html" class="box">
+								  	<div class="img"><img src="img/index/20210805104110_2799.jpg" ></div>
+								  	<div class="text">
+								  		<p class="ellipsis">锂离子电池进入规模化退役 电池回收成业界焦点</p>
+								  		<div class="line"></div>
+								  		<div class="jt">
+								  			<div class="right">
+								  				<img src="img/index/new_jt.png" >
+								  				<img src="img/index/new_jt_a.png" >
+								  			</div>
+								  		</div>
+								  	</div>
+								  </a>
+							  </div>
+						      <div class="swiper-slide">
+								  <a href="son/news/news_son_2.html" class="box">
+								  	<div class="img"><img src="img/index/20210731140102_2314.jpg" ></div>
+								  	<div class="text">
+								  		<p class="ellipsis">中国锂电池负极材料行业大数据分析</p>
+								  		<div class="line"></div>
+								  		<div class="jt">
+											<div class="right">
+												<img src="img/index/new_jt.png" >
+												<img src="img/index/new_jt_a.png" >
+											</div>
+								  		</div>
+								  	</div>
+								  </a>
+							  </div>
+						    </div>
+						</div>
+					</div>
+					<a href="news.html" class="SeeMore">查看更多</a>
+				</div>
+			</div>
+			<!--7屏================================= -->
+			<div class="section">
+				<div class="wrap">
+					<div class="foo_header">
+						<div class="left">
+							<a href="index.html" class="foo_logo"><img src="img/index/ftlogo.png" ></a>
+							<div class="bottom_text">
+								<p>地址：浙江省杭州市萧山经济技术开发区桥南区块高新十一路77号</p>
+								<p>服务热线：0571-8646-3544</p>
+							</div>
+						</div>
+						<ul class="right_list">
+							<li>
+								<h5><a href="About.html">杭可　印象</a></h5>
+								<a href="About.html#About_1">公司简介</a>
+								<a href="About.html#About_2">发展历程</a>
+								<a href="About.html#About_3">技术实力</a>
+								<a href="About.html#About_4">生产能力</a>
+								<a href="About.html#About_5">合作伙伴</a>
+								<a href="About.html#About_6">企业文化</a>
+							</li>
+							<li>
+								<h5><a href="products.html">杭可　产品</a></h5>
+								<a href="products.html">软包动力后处理系统</a>
+								<a href="products.html">方形动力后处理系统</a>
+								<a href="products.html">圆柱后处理系统</a>
+								<a href="products.html">软包数码后处理系统</a>
+								<a href="products.html">测试系统</a>
+								<a href="products.html">物流设备</a>
+								<a href="products.html">软件系统</a>
+							</li>
+							<li>
+								<h5><a href="Services.html">杭可　服务</a></h5>
+								<a href="Services.html#Services1_1">服务理念</a>
+								<a href="Services.html#Services1_2">服务网点</a>
+								<a href="Services.html#Services1_3">服务热线</a>
+								<a href="Services.html#Services1_4">文档下载</a>
+							</li>
+							<li>
+								<h5><a href="Investor.html">投资者关系</a></h5>
+								<a href="Investor.html#Investor1">股票动态</a>
+								<a href="Investor.html#Investor2">公司公告</a>
+							</li>
+							<li>
+								<h5><a href="news.html">杭可 资讯</a></h5>
+								<a href="news.html#news">行业新闻</a>
+								<a href="news.html#news">杭可动态</a>
+							</li>
+							<li>
+								<h5><a href="Talents.html">杭可 资讯</a></h5>
+								<a href="Talents.html#Talents_1">人才理念</a>
+								<a href="Talents.html#Talents_2">培训发展</a>
+								<a href="Talents.html#Talents_3">员工风采</a>
+								<a href="Talents.html#Talents_4">招贤纳士</a>
+							</li>
+							<li>
+								<h5><a href="Contact.html">杭可 联系</a></h5>
+								<a href="Contact.html#Contact_1">联系方式</a>
+								<a href="Contact.html#Contact_2">在线留言</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<footer>
+					<a href="https://www.cnzz.com/stat/website.php?web_id=1279016614">浙ICP备12042562号<img src="https://icon.cnzz.com/img/pic.gif" title="站长统计"></a>
+					<a href="##">网站建设：翰臣科技</a>
+				</footer>
+			</div>
+		</div>
+		<!-- fullpage主体内容结束 -->
+	</body>
+	<script src="js/fullpage.js" id="fullpage"></script>
+	<script src="js/index.js"></script>
+	<script src="js/nav.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/jquery-asPieProgress.min.js"></script>
+	<script src="js/wow.js"></script>
+	<script>
+		// wow动画
+		if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+			new WOW().init();
+		};
+	</script>
+</html>
