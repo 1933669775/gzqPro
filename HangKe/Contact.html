@@ -17,7 +17,9 @@
 		<!-- 我来组成头部！ -->
 		<div class="headerNav">
 			<script>
-				$(".headerNav").load("json/nav.html")
+				$(".headerNav").load("json/nav.html",function(){
+					$.getScript("js/nav.js");
+				})
 			</script>
 		</div>
 		<!-- 小屏幕导航结束 -->
