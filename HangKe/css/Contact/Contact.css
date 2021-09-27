@@ -1,0 +1,194 @@
+.Contact1 {
+  width: 100%;
+  background: url(../../img/Contact/con_02.jpg) no-repeat center top / cover;
+  padding: 6.25% 0 6.1%;
+}
+.Contact1 .wrap {
+  width: calc(90% - 80px);
+  margin: 0 auto;
+  display: flex;
+  padding: 40px 40px 60px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: solid 4px #0077cc;
+}
+.Contact1 .wrap .left {
+  width: 450px;
+}
+.Contact1 .wrap .left .top p {
+  text-align: center;
+}
+.Contact1 .wrap .left .top p:nth-child(1) {
+  font-size: 18px;
+  margin-bottom: 18px;
+  color: #fff;
+}
+.Contact1 .wrap .left .top p:nth-child(2) {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 40px;
+}
+.Contact1 .wrap .left .img img {
+  margin: 0 auto;
+}
+.Contact1 .wrap .right {
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  padding-left: 6%;
+  flex: 1;
+}
+.Contact1 .wrap .right .box {
+  display: flex;
+  padding: 30px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.Contact1 .wrap .right .box:last-of-type {
+  border: none;
+}
+.Contact1 .wrap .right .box:nth-child(n+3) ul {
+  display: flex;
+}
+.Contact1 .wrap .right .box:nth-child(n+3) ul li {
+  line-height: 30px;
+}
+.Contact1 .wrap .right .box:nth-child(n+3) ul li:nth-child(1) {
+  margin-right: 20px;
+}
+.Contact1 .wrap .right .box p {
+  padding-top: 3px;
+  width: 90px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 900;
+}
+.Contact1 .wrap .right .box ul {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  padding-left: 20px;
+}
+.Contact1 .wrap .right .box ul li {
+  margin-bottom: 10px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #fff;
+}
+input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+textarea::-webkit-input-placeholder {
+  color: #ffffff;
+}
+.Contact2 {
+  width: 100%;
+  background: url(../../img/Contact/con_03.jpg) no-repeat center top / cover;
+  padding: 6.25% 0 10.4166%;
+}
+.Contact2 .wrap {
+  width: 90%;
+  margin: 0 auto;
+}
+.Contact2 .wrap .top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.Contact2 .wrap .top input {
+  width: calc(46.875% - 40px);
+  margin-bottom: 40px;
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 2px;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  outline: none;
+  color: #fff;
+}
+.Contact2 .wrap .top textarea {
+  width: 100%;
+  border-radius: 2px;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  outline: none;
+  color: #fff;
+  height: 200px;
+  padding: 20px;
+}
+.Contact2 .wrap .bottom {
+  display: flex;
+  justify-content: center;
+}
+.Contact2 .wrap .bottom input {
+  width: 180px;
+  height: 50px;
+  background-color: #bc0715;
+  border: 1px solid #BC0715;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 3px;
+}
+.Contact2 .wrap .bottom input:nth-child(1) {
+  margin-right: 60px;
+}
+.Contact2 .wrap .bottom input:nth-child(2) {
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+}
+@media (min-width: 1440px) {
+  .Contact1 .wrap {
+    width: calc(90% - 120px);
+    padding: 60px 60px 80px;
+  }
+  .Contact1 .wrap .left {
+    width: 560px;
+  }
+}
+@media (max-width: 1200px) {
+  .Contact1 .wrap .right .box:nth-child(n+3) ul {
+    display: block;
+  }
+  .Contact1 .wrap .right .box:nth-child(n+3) ul li {
+    line-height: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .Contact1 .wrap .left {
+    width: 320px;
+  }
+  .Contact1 .wrap .left .img img {
+    width: 100%;
+  }
+  .Contact1 .wrap .right .box p {
+    width: 90px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .Contact1 .wrap {
+    width: 90%;
+    padding: 0;
+    flex-direction: column;
+  }
+  .Contact1 .wrap .left {
+    width: 100%;
+  }
+  .Contact1 .wrap .left .img img {
+    width: 344px;
+    max-width: 100%;
+  }
+  .Contact1 .wrap .right {
+    margin-top: 20px;
+    padding: 0 10px;
+    border: none;
+    width: calc(100% - 20px);
+  }
+  .Contact1 .wrap .right .box {
+    padding: 10px 0;
+  }
+  .Contact1 .wrap .right .box ul {
+    width: 70%;
+  }
+  .Contact2 .wrap .top input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
