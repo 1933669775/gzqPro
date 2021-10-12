@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta http-equiv="X-UA-Compatible" content="IE=dege"  />
+		<meta name="viewport" content="width=device-width,inital
+			-scale=1,maximum-scale=1,user-scalable=no">
+		<meta content="telephone=no" name="format-detection">
+		<!--[if lt IE 8]>
+        	<script src="html5.js"></script>
+        	<script src="respond.js"></script>  
+        <![endif]-->
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/currency.css"/>
+	<link rel="stylesheet" type="text/css" href="css/css.css"/>
+	<link rel="stylesheet" type="text/css" href="css/news/news.css"/>
+	<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<body>
+		<div class="headerNav">
+			<script>
+				$(".headerNav").load("json/nav.html",function(){
+					$.getScript("js/nav.js");
+				})
+			</script>
+		</div>
+		<!-- 内容部分1 -->
+		<div class="content_1">
+			<img src="img/news/20190806204744_0580.jpg" >
+			<div class="content_1_content">
+				<div class="cn wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.3s">
+					<span>杭可</span>
+					<i></i>
+					<span>资讯</span>
+				</div>
+				<div class="en wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.4s">Hangke Information</div>
+			</div>
+			<div class="wrap">
+				<a href="Investor.html" class="content_1_left">
+					<div class="img">
+						<img src="img/About/banner_jt_l.png" >
+						<img src="img/About/banner_jt_l_a.png" >
+					</div>
+					<div class="text">投资者关系</div>
+				</a>
+				<a href="Talents.html" class="content_1_right">
+					<div class="img">
+						<img src="img/About/banner_jt_r.png" >
+						<img src="img/About/banner_jt_r_a.png" >
+					</div>
+					<div class="text">杭可<span></span>人才</div>
+				</a>
+			</div>
+			<div id="ind_down">
+				<a href="roll">
+					<img src="img/index/scrolldown.png" >
+					<div><p></p></div>
+				</a>
+			</div>
+		</div>
+		<!-- 内容部分1结束 -->
+		<!-- 菜单条开始 -->
+		<div class="menu_bar roll" id="menu_bar">
+			<div class="wrap" id="CikckRoll">
+				<a href="##" class="box bar_active wow fadeIn"  data-wow-duration=".5s" data-wow-delay="0.4s">
+					<p>行业新闻</p>
+				</a>
+				<a href="##" class="box wow fadeIn" data-wow-duration=".5s" data-wow-delay="0.5s">
+					<p>航可动态</p>
+				</a>
+			</div>
+		</div>
+		<!-- 菜单条结束 -->
+		<!-- 内容部分开始 -->
+		<div class="news" id="news">
+			<div class="ind_text_top" style="padding: 0; margin-bottom:0; width: 100%; text-align: center;">
+				<h2 style="margin-bottom:0;" class="wow fadeInUp" data-wow-duration=".6s" data-wow-delay="0.5s">行业新闻</h2>
+				<p style="height: auto; width: 100%;color: #c2d1e0; text-align: ; margin: 0 0 20px 0;" class="wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.6s">Industry News</p>
+			</div>
+			<div class="wrap"></div>
+			<div class="paging_content">
+				<div class="paging_first">首页</div>
+				<div class="paging_up"><img src="img/news/prev_page.png" ></div>
+				<div class="paging_btn"></div>
+				<div class="paging_down"><img src="img/news/next_page.png"></div>
+				<div class="paging_last">末页</div>
+			</div>
+		</div>
+		<div class="foo">
+			<script>
+				$(".foo").load("json/footer.html")
+			</script>
+		</div>
+	</body>
+	<script src="js/CikckRoll.js"></script>
+	<script src="js/wow.js"></script>
+	<script src="./js/jquery-paging.js"></script>
+	<script src="js/news/news.js"></script>
+	<script>
+		if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+			new WOW().init();
+		}
+	</script>
+</html>
