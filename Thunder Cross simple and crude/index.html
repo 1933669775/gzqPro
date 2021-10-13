@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			html{
+				overflow: hidden;
+				overflow-x: hidden;
+			}
+			.main{
+				width: 150px;
+				height: 100px;
+				position: absolute;
+				text-align: center;
+				color: #fff;
+				display: none;
+				background: url(img/飞机.gif) no-repeat center top / 100% 100%;
+			}
+			body{
+				width: calc(100% - 100px);
+				padding: 0 50px;
+				overflow: hidden;
+				height: 100vh;
+				background:url(img/宇宙背景动图.gif);
+			}
+			.blast{
+				background-image: url(img/爆炸.gif) !important;
+			}
+			.cartridge{
+				width: 8px;
+				height: 14px;
+				border-top-right-radius: 50%;
+				border-top-left-radius: 50%;
+				background-color: #ffff00;
+				position: absolute;
+			}
+			.foe{
+				width: 200px;
+				height: 130px;
+				background-color: #000;
+				position: absolute;
+				background: url(img/敌人.gif) no-repeat center / 100% 100%;
+				color: #00ff00;
+			}
+			.foeCartridge{
+				position: absolute;
+				width: 25px;
+				height: 25px;
+				background-color: #ff0000;
+				border-radius: 50%;
+			}
+			.plan{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+			}
+			.begin{
+				width: 200px;
+				height: 50px;
+				font-size: 20px;
+				font-weight: 900;
+				color: blue;
+				margin-bottom: 10px;
+				transition: .5s;
+			}
+			#mark,h1,label{
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<p id="mark">当前分数:<span>0</span></p>
+		<div class="plan">
+			<button class="begin">开始</button>
+			<div class="difficulty">
+				<span>难度:</span>
+				<input type="radio" checked="checked" name="difficulty" value="0" /><label>简单</label>
+				<input type="radio" name="difficulty" value="1" /><label>困难</label>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/index.js"></script>
+</html>
