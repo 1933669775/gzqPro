@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				width: 100%;
+				overflow: hidden;
+				height: 100vh;
+			}
+			button{
+				cursor: pointer;
+			}
+			.container{
+				display: flex;
+				flex-wrap: wrap;
+				margin: 0 auto;
+				background-color: #61ac5a;
+				width: 500px;
+				position: relative;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+			.container .burrows{
+				width: 135px;
+				padding-top: 20px;
+				margin: 0 20px 0 0;
+				height: 65px;
+				background: url(img/地洞.png) no-repeat bottom / 100% 85%;
+				position: relative;
+				overflow: hidden;
+			}
+			.container .burrows:nth-child(3n+1){
+				margin-left: 23px;
+			}
+			
+			.container .burrows:nth-last-child(3){
+				margin-bottom: 20px;
+			}
+			.susliks,.immortal{
+				width: 70px;
+				height: 100px;
+				background-color: blue;
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+				top: 60px;
+				background: url(img/地鼠.png) no-repeat center / 100% 100%;
+			}
+			#hammer{
+				width: 80px;
+				height: 100px;
+				position: absolute;
+				background:url(img/锤子.png) no-repeat center / 100% 100%;
+				transform: rotate(10deg);
+				pointer-events: none;
+			}
+			.wrapLife{
+				position: absolute;
+				top: 5px;
+				left: 10%;
+				font-size: 30px;
+				color: #464600;
+				display: none;
+			}
+			.wrapLife #life{
+				font-weight: 900;
+				color: #ff0000;
+				font-size: 35px;
+			}
+			#wrapMark{
+				display: flex;
+				position: absolute;
+				left: 10%;
+				top: 80px;
+				font-size: 30px;
+				display: none;
+			}
+			#wrapMark span{
+				color: #464600;
+			}
+			#wrapMark #mark{
+				font-weight: 900;
+				color: #ff5500;
+			}
+			#wrap{
+				height: 100vh;
+			}
+			#endBox{
+				width: 100%;
+				height: 100vh;
+				display: none;
+			}
+			#endBox p{
+				font-size: 60px;
+				font-weight: 900;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+			}
+			input{
+				width: 30px;
+				height: 30px;
+			}
+			#initial p{
+				font-size: 23px;
+			}
+			.goMrak{
+				position: absolute;
+				color: red;
+				font-size: 80px;
+				font-weight: 900;
+			}
+			.immortal{
+				background: url(img/小仙女.gif) no-repeat center / 100% 100%;
+			}
+			#timing{
+				text-align: center;
+				font-size: 40px;
+				font-weight: 900;
+				color: #FF5500;
+				display: none;
+				left: 50%;
+				transform: translateX(-50%);
+				top: 30px;
+				position: absolute;
+			}
+			#finishMarkWrap{
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+			#finishMarkWrap li{
+				display: flex;
+				border: 1px solid red;
+				border-top: 0;
+				padding: 3px;
+			}
+			#finishMarkWrap li:first-of-type{
+				border: 1px solid red;
+			}
+			.mod{
+				margin-right: 10px;
+			}
+			#explain{
+				margin-top: 50px;
+			}
+			@keyframes susliksMove{
+				0%{
+					top: 65px;
+				}
+				50%{
+					top: 0;
+				}
+				100%{
+					top: 67px;
+				}
+			}
+			@keyframes lit{
+				0%{
+					transform: rotate(10deg);
+				}
+				50%{
+					transform: rotate(-60deg);
+				}
+				100%{
+					transform: rotate(10deg);
+				}
+			}
+			@keyframes goMrak{
+				0%{
+					transform: scale(1);
+					opacity: 1;
+				}
+				50%{
+					transform: scale(0.5);
+					opacity: 0.5;
+				}
+				100%{
+					transform: scale(0);
+					opacity: 0;
+				}
+			}
+		</style>
+	</head>
+	<body id="body">
+		<div id="wrap">
+			<center id="h1"><h1>打地鼠</h1></center>
+			<div id="timing"></div>
+			<div class="wrapLife" id="wrapLife"><img src="img/爱心.gif" >：<p id="life">10</p></div>
+			<div id="wrapMark"><span>分数：</span><p id="mark">0</p></div>
+			<div class="initial" id="initial">
+				<h2>难度:</h2>
+				<p><input type="radio" name="difficulty" value="0" />无尽</p>
+				<p><input type="radio" name="difficulty" value="1" checked />普通</p>
+				<button id="go">开始！</button>
+			</div>
+			<div class="container" id="container"></div>
+			<ul id="finishMarkWrap">
+			</ul>
+			<div id="explain">说明<br>普通模式：<br>打到地鼠加分，打到小仙女扣分，限时50秒，随<br>着时间地鼠生成速度加速，地鼠速度加速。<br>无尽模式：<br>时间无限，为了增加挑战性，地鼠如果没打到，会<br>扣生命，打到地鼠会加生命。打到小仙女会扣生命，<br>生命为0游戏结束，随着时间游戏游戏难度增加。</div>
+		</div>
+		<div id="endBox">
+			<p>游戏结束！</p>
+		</div>
+	</body>
+	<script src="js/index.js"></script>
+</html>
